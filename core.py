@@ -72,8 +72,8 @@ class HackingTool(object):
         for index, option in enumerate(self.OPTIONS):
             print(f"[{index + 1}] {option[0]}")
         if self.PROJECT_URL:
-            print(f"[{98}] Open project page")
-        print(f"[{99}] Back to {parent.TITLE if parent is not None else 'Exit'}")
+            print(f'[98] Open project page')
+        print(f'[99] Back to {parent.TITLE if parent is not None else "Exit"}')
         option_index = input("Select an option : ")
         try:
             option_index = int(option_index)
@@ -161,7 +161,7 @@ class HackingToolsCollection(object):
         self.show_info()
         for index, tool in enumerate(self.TOOLS):
             print(f"[{index} {tool.TITLE}")
-        print(f"[{99}] Back to {parent.TITLE if parent is not None else 'Exit'}")
+        print(f'[99] Back to {parent.TITLE if parent is not None else "Exit"}')
         tool_index = input("Choose a tool to proceed: ")
         try:
             tool_index = int(tool_index)
